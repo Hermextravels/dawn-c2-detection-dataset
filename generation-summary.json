@@ -1,0 +1,21 @@
+{
+  "captures": [
+    {
+      "file": "malware-scenario-1.pcap",
+      "packets": 390,
+      "malicious_packets": 146
+    },
+    {
+      "file": "malware-scenario-2.pcap",
+      "packets": 368,
+      "malicious_packets": 136
+    },
+    {
+      "file": "benign-reference.pcap",
+      "packets": 618,
+      "malicious_packets": 0
+    }
+  ],
+  "generator": "Python standard library",
+  "synthetic": true
+}

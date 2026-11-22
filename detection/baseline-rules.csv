@@ -1,0 +1,4 @@
+candidate_id,feature,threshold,window_seconds,validation_capture,observed_false_positives,observed_true_positives,decision,analyst_notes
+A,known_destination,,,,,,,
+B,failed_connection_attempts,,,,,,,
+C,dns_correlated_failures,,,,,,,
