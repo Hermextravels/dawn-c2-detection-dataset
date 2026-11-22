@@ -18,3 +18,10 @@ Traffic is generated, not recorded from a live network. TCP is intentionally sim
 
 ## License
 All original files in this dataset are dedicated under CC0 1.0 Universal. See `LICENSE`. This license applies only to these original files and does not change the license of CTU-IDSEVAL-6 or any third-party dataset.
+
+## Advanced protocol-decoder extension (prepared before recording)
+To address the need for substantive build-and-test work inside the Wireshark workflow, this repository additionally contains three **separately named** synthetic protocol fixtures: `pcap/protocol-malware-scenario-1.pcap`, `pcap/protocol-malware-scenario-2.pcap`, and `pcap/protocol-benign-reference.pcap`. These are **not modifications of the earlier PCAPs**. Their reproducible packet generator is `generator/build_protocol_fixtures.py` (Python standard library, no network connections). Per-packet ground truth is in `labels/*-packet-labels.csv`; decoder expectations are in `validation/*-expected-messages.csv`.
+
+The protocol specification is in `wireshark/PROTOCOL-SPEC.md`. The intentionally **unfinished** initial plugin is `wireshark/dawn_c2_starter.lua`. The actual recording task would implement a robust version-aware, length-bounded, TCP-reassembling, multi-message dissector, and validate it against all three generated fixtures. The generated captures intentionally include split headers, split payloads, coalesced messages, rejected versions and types, lengths exceeding a maximum, truncated messages, and benign lookalikes.
+
+**Scope warning:** This extension models synthetic protocol framing in packet-crafted traces; it is neither an authentic live capture nor an independently sourced real malware dataset. The starting Lua plugin is deliberately incomplete, and its functionality has not been run inside Wireshark in this environment. Review the approved-task app and source requirements before presenting it as a compliant input.

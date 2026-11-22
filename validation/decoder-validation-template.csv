@@ -1,0 +1,11 @@
+capture,test_case,expected_valid,observed_valid,false_positive,false_negative,frame_or_stream_reference,root_cause,decision
+protocol-malware-scenario-1.pcap,split_header,,,,,,,
+protocol-malware-scenario-1.pcap,split_body,,,,,,,
+protocol-malware-scenario-1.pcap,coalesced,,,,,,,
+protocol-malware-scenario-1.pcap,bad_length,,,,,,,
+protocol-malware-scenario-1.pcap,bad_version,,,,,,,
+protocol-malware-scenario-1.pcap,truncated_message,,,,,,,
+protocol-malware-scenario-1.pcap,wrong_magic,,,,,,,
+protocol-malware-scenario-1.pcap,unknown_type,,,,,,,
+protocol-malware-scenario-2.pcap,all_protocol_cases,,,,,,,
+protocol-benign-reference.pcap,benign_lookalikes,,,,,,,

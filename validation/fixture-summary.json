@@ -1,0 +1,20 @@
+[
+  {
+    "capture": "protocol-malware-scenario-1.pcap",
+    "frames": 160,
+    "expected_valid_messages": 46,
+    "expected_rejected_messages": 9
+  },
+  {
+    "capture": "protocol-malware-scenario-2.pcap",
+    "frames": 160,
+    "expected_valid_messages": 46,
+    "expected_rejected_messages": 9
+  },
+  {
+    "capture": "protocol-benign-reference.pcap",
+    "frames": 88,
+    "expected_valid_messages": 0,
+    "expected_rejected_messages": 4
+  }
+]

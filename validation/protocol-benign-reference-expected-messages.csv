@@ -1,0 +1,5 @@
+test_case,flow,message_type,session_id,message_sequence,valid,detail
+benign_lookalike_0,stream,UNKNOWN,0,0,False,magic prefix but truncated header
+benign_lookalike_2,stream,UNKNOWN,0,0,False,magic prefix but truncated header
+benign_lookalike_4,stream,UNKNOWN,0,0,False,magic prefix but truncated header
+benign_lookalike_6,stream,UNKNOWN,0,0,False,magic prefix but truncated header
